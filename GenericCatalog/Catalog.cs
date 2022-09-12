@@ -27,6 +27,13 @@ namespace GenericCatalog
                 _items.Add(Id, anItem);
             }
         }
+        public void PrintAll()
+        {
+            foreach(var itm in _items)
+            {
+                Console.WriteLine(itm);
+            }
+        }
 
         public void Delete(string Id)
         {
