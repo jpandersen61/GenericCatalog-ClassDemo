@@ -22,6 +22,14 @@ namespace GenericCatalog
             employees.Insert(c2.LicensePlate, e2);
             employees.Insert(c3.LicensePlate, e3);
 
+            Catalog<Computer> computers = new Catalog<Computer>();
+            Computer com1 = new Computer("123", "net1");
+            Computer com2 = new Computer("456", "net12");
+            Computer com3 = new Computer("789", "net3");
+            computers.Insert(com1.SerialNo, com1);
+            computers.Insert(com2.SerialNo, com2);
+            computers.Insert(com3.SerialNo, com3);
+
             KeepConsoleWindowOpen();
         }
 
